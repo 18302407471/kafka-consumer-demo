@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         Properties props = new Properties();
         props.put("auto.offset.reset", "smallest"); //必须要加，如果要读旧数据
-        props.put("zookeeper.connect", "10.11.2.2:2181");
+        props.put("zookeeper.connect", "地址:2181");
         props.put("group.id", "test_wjg1");
 
         ConsumerConfig conf = new ConsumerConfig(props);
